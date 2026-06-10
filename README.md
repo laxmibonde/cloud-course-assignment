@@ -1,2 +1,0 @@
-# cloud-course-assignment
-Assignment
