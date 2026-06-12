@@ -1,198 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cloud Computing Assignment</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Actions Workflow</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 90px;
+            text-align: center;
+            color: white;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            border: 5px solid white;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.15);
+        }
+    </style>
 </head>
 <body>
-
-  <nav>
-    <a href="index.html" class="nav-brand">cloud_assign/</a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">Technologies</a></li>
-    </ul>
-  </nav>
-
-  <main>
-
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-eyebrow">Cloud Computing Assignment</div>
-     
-      <p class="hero-sub">
-        A comprehensive study of cloud infrastructure, service models, deployment strategies,
-        security, and emerging technologies — from virtualisation to serverless computing.
-      </p>
-
-      <div class="stats-row">
-        <div class="stat-item">
-          <div class="stat-number">3</div>
-          <div class="stat-label">Service Models</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">4</div>
-          <div class="stat-label">Deployment Types</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">6+</div>
-          <div class="stat-label">Core Topics</div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-number">20+</div>
-          <div class="stat-label">Technologies</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TOPICS -->
-    <div class="section-wrap">
-      <div class="section-title">
-        <div class="line"></div>
-        <h2>// Key Topics Covered</h2>
-        <div class="line"></div>
-      </div>
-
-      <div class="topic-grid">
-        <div class="topic-card">
-          <div class="topic-icon">☁️</div>
-          <h3>Cloud Service Models</h3>
-          <p>Understand IaaS, PaaS, and SaaS — their differences, use cases, and how providers like AWS, Azure, and GCP implement each layer.</p>
-          <span class="tag">IaaS · PaaS · SaaS</span>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">🌐</div>
-          <h3>Deployment Models</h3>
-          <p>Compare public, private, hybrid, and community clouds. Explore when each is used and the trade-offs in cost, control, and compliance.</p>
-          <span class="tag">Public · Private · Hybrid</span>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">⚙️</div>
-          <h3>Virtualisation</h3>
-          <p>Learn how hypervisors (Type 1 and Type 2), virtual machines, and containers work — and why Docker changed how apps are deployed.</p>
-          <span class="tag">VMs · Docker · Hypervisor</span>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">🔒</div>
-          <h3>Cloud Security</h3>
-          <p>Study IAM, data encryption, firewalls, and the shared responsibility model. Understand how cloud providers secure infrastructure at scale.</p>
-          <span class="tag">IAM · Encryption · Firewalls</span>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">📦</div>
-          <h3>Storage Services</h3>
-          <p>Explore object storage (AWS S3), block storage (EBS), and file storage. Learn data durability, replication, and lifecycle policies.</p>
-          <span class="tag">S3 · EBS · Blob Storage</span>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">📈</div>
-          <h3>Scalability & Elasticity</h3>
-          <p>Understand horizontal vs vertical scaling, auto-scaling groups, load balancers, and how cloud systems handle traffic spikes gracefully.</p>
-          <span class="tag">Auto-Scaling · Load Balancing</span>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">⚡</div>
-          <h3>Serverless Computing</h3>
-          <p>Explore Functions-as-a-Service with AWS Lambda and Azure Functions. Build event-driven apps without managing any server infrastructure.</p>
-          <span class="tag">Lambda · FaaS · Event-driven</span>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">🔄</div>
-          <h3>DevOps & CI/CD</h3>
-          <p>How cloud platforms enable continuous integration and deployment pipelines with tools like GitHub Actions, CodePipeline, and Jenkins.</p>
-          <span class="tag">CI/CD · Pipelines · Automation</span>
-        </div>
-        <div class="topic-card">
-          <div class="topic-icon">🗄️</div>
-          <h3>Managed Databases</h3>
-          <p>Compare RDS, DynamoDB, Cosmos DB, and Firebase. Learn when to choose relational vs NoSQL databases in cloud-native architectures.</p>
-          <span class="tag">RDS · DynamoDB · NoSQL</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- TIMELINE -->
-    <div class="section-wrap">
-      <div class="section-title">
-        <div class="line"></div>
-        <h2>// Cloud Evolution Timeline</h2>
-        <div class="line"></div>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <h3>Mainframe Era</h3>
-          <div class="meta">1960s – 1970s</div>
-          <p>Centralised computing where users shared mainframe resources via dumb terminals. The earliest form of shared computing infrastructure.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Client-Server Model</h3>
-          <div class="meta">1980s – 1990s</div>
-          <p>PCs and local networks shifted computing to distributed systems. Servers hosted applications and databases while clients ran the UI.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Virtualisation Revolution</h3>
-          <div class="meta">Early 2000s</div>
-          <p>VMware introduced enterprise virtualisation, allowing multiple operating systems on one physical machine — laying the groundwork for cloud.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Birth of Public Cloud</h3>
-          <div class="meta">2006 — AWS Launches EC2 & S3</div>
-          <p>Amazon Web Services launched EC2 and S3, allowing anyone to rent compute and storage on demand. The modern cloud era begins.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Cloud Goes Mainstream</h3>
-          <div class="meta">2010s — Azure, GCP, Docker</div>
-          <p>Microsoft Azure and Google Cloud Platform expand the market. Docker (2013) revolutionises containerisation. Serverless computing emerges.</p>
-        </div>
-        <div class="timeline-item">
-          <h3>Cloud-Native & Edge</h3>
-          <div class="meta">2020s — Present</div>
-          <p>Kubernetes, service meshes, and edge computing push workloads closer to users. AI/ML workloads become a primary driver of cloud adoption.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="section-wrap">
-      <div class="cta-banner">
-        <div class="cta-inner">
-          <h3>39 Technologies, 6 Categories</h3>
-          <p>From AWS EC2 to Kubernetes, MySQL to Docker — a full inventory of every tool and platform studied this course.</p>
-        </div>
-        <div class="cta-tech-preview">
-          <div class="preview-label">Covered in detail</div>
-          <span class="cta-chip">AWS · Azure · GCP</span>
-          <span class="cta-chip">Docker · Kubernetes</span>
-          <span class="cta-chip amber">Python · SQL · Bash</span>
-          <span class="cta-chip amber">MySQL · DynamoDB</span>
-        </div>
-        <div class="cta-btn-wrap">
-          <a href="about.html" class="btn">View All Technologies →</a>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <footer>
-    &copy; 2026 &nbsp;·&nbsp; Cloud Computing Assignment &nbsp;·&nbsp; Claude
-  </footer>
-
+    <h1>GitHub Actions Workflow</h1>
 </body>
 </html>
-HTMLEOF
-echo "index.html done"
-Output
-
-index.html done
-
-Write new about.html
-
-Script
-Done
-
-You are out of free messages until 2:00 AM
